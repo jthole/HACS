@@ -1,0 +1,20 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temporary and generated files
+*.tmp
+*.bak
+*.log
+*.zip
+
+# Local working directories
+.work/
+build/
+dist/

@@ -1,10 +1,30 @@
 # Changelog
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Release Manager  
 **Status:** Informative  
-**Current release:** 0.3.0
+**Current release candidate:** 0.4.0
 
 All notable changes to HACS are recorded here. HACS follows the versioning rules in [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#versioning-policy).
+
+## [0.4.0] — 2026-07-24
+
+### Added
+
+- a self-contained, model-agnostic `CollaborationContract.md`;
+- an informative overview of the ten HACS principles;
+- ADR-0010, classifying the standalone contract as an adoptable derived artifact;
+- author attribution across repository documents.
+
+### Changed
+
+- licensed the draft specification under Creative Commons Attribution-ShareAlike 4.0 International;
+- clarified precedence and warnings for evidence from different product versions;
+- advanced release-wide metadata to 0.4.0.
+
+### Compatibility
+
+This is a backward-compatible release. The minor version reflects the standalone contract and principles document as new document capabilities, together with a substantial evidence-handling clarification.
 
 ## [0.3.0] — 2026-07-24
 
@@ -72,5 +92,6 @@ This is a backward-compatible expansion of the 0.1.0 bootstrap principles. Exist
 [0.2.0]: https://example.invalid/hacs/releases/tag/v0.2.0
 [0.1.0]: https://example.invalid/hacs/releases/tag/v0.1.0
 [0.3.0]: https://example.invalid/hacs/releases/tag/v0.3.0
+[0.4.0]: https://example.invalid/hacs/releases/tag/v0.4.0
 
 > The comparison links are placeholders until a canonical repository URL is assigned.

@@ -1,5 +1,6 @@
 # ADR-<NNNN> — <Decision title>
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Status:** Proposed | Accepted | Deprecated | Superseded | Rejected  
 **Date:** <YYYY-MM-DD>  
 **Decision owner:** <owner>  

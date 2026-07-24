@@ -1,5 +1,6 @@
 # Example HACS Conformance Review
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Status:** Non-normative example
 
 ## Scenario

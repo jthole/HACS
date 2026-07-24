@@ -1,8 +1,9 @@
 # HACS Decision Log
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** HACS Maintainer  
 **Status:** Normative for accepted decisions  
-**Version:** 0.3.0<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24
 
 ## Purpose
@@ -30,6 +31,7 @@ This log records architectural and governance decisions with lasting consequence
 | ADR-0007 | HACS uses semantic versioning for specification releases | Accepted | 0.2.0 |
 | ADR-0008 | Capability boundaries outrank requested behaviour | Accepted | 0.2.0 |
 | ADR-0009 | Material applicability determines evidence verification | Accepted | 0.3.0 |
+| ADR-0010 | The standalone contract is an adoptable derived artifact | Accepted | 0.4.0 |
 
 ---
 
@@ -104,6 +106,14 @@ This log records architectural and governance decisions with lasting consequence
 **Decision:** A collaborator determines whether version, edition, configuration, or recency could materially affect correctness. When it could, the collaborator establishes the applicable context, verifies current information using authoritative evidence where available, distinguishes evidence from inference, and reports unresolved applicability or evidence limitations.<br>
 **Consequences:** Verification is triggered by material dependence rather than topic category. Configuration details cannot be invented, and incomplete evidence remains visible. The default behavioural requirements are owned by `CollaborationProfile.md`.<br>
 **Affected documents:** `Architecture.md`, `CollaborationProfile.md`
+
+## ADR-0010 — The standalone contract is an adoptable derived artifact
+
+**Status:** Accepted<br>
+**Context:** Users need one self-contained contract that can be applied directly across AI products. Reproducing behavioural requirements in a delivery artifact could create a second repository owner and allow the contract to diverge from the default Collaboration Profile.<br>
+**Decision:** HACS provides `CollaborationContract.md` as a self-contained derived artifact. It becomes normative within a collaboration context when adopted there. Within the HACS repository, the owning normative documents remain authoritative, and release validation must check the contract for alignment with them. `PRINCIPLES.md` is an informative overview and does not own normative requirements.<br>
+**Consequences:** The contract can be used without the rest of the repository while HACS retains single ownership of its source requirements. Contract alignment becomes a release check.<br>
+**Affected documents:** `PROJECT.md`, `Architecture.md`, `CollaborationContract.md`, `PRINCIPLES.md`, `RELEASE_PROCESS.md`
 
 ## Adding decisions
 

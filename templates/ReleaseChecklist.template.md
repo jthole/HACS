@@ -1,5 +1,6 @@
 # HACS Release Checklist
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Target version:** <version>  
 **Release manager:** <name>  
 **Baseline revision:** <commit or tag>
@@ -17,6 +18,7 @@
 - [ ] Normative metadata is complete.
 - [ ] Accepted decisions are reflected.
 - [ ] No material normative duplication remains.
+- [ ] Before a MINOR release, `CollaborationContract.md` is compared with all changed owning design documents and updated consistently, or the review records why no contract change is required.
 - [ ] Changelog is updated.
 - [ ] Maintenance report is complete.
 

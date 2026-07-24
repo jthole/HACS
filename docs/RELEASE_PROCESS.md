@@ -1,8 +1,9 @@
 # HACS Release Process
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Release Manager  
 **Status:** Normative  
-**Version:** 0.3.0<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24
 
 ## Purpose
@@ -17,7 +18,7 @@ HACS uses semantic versioning:
 - **MINOR** — backward-compatible normative additions, substantial clarifications, or new document capabilities;
 - **PATCH** — backward-compatible corrections that do not materially change requirements.
 
-Pre-release identifiers such as `0.3.0-rc.1` MAY be used. The version is release-wide; individual documents MUST carry the release version unless explicitly versioned independently by a future decision.
+Pre-release identifiers such as `1.2.0-rc.1` MAY be used. The version is release-wide; individual documents MUST carry the release version unless explicitly versioned independently by a future decision.
 
 ## Release states
 
@@ -102,6 +103,7 @@ A release candidate MUST satisfy:
 - terminology and requirement language are consistent;
 - no accepted decision is contradicted;
 - normative requirements have one primary owner;
+- the standalone collaboration contract is aligned with its owning normative requirements;
 - assumptions and known limitations are recorded.
 
 ### Validation

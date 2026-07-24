@@ -1,5 +1,6 @@
 # Example Project Collaboration Profile
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Status:** Non-normative example  
 **Extends:** [`../docs/CollaborationProfile.md`](../docs/CollaborationProfile.md)
 

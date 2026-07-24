@@ -1,5 +1,7 @@
 # Templates
 
+**Author:** Johan Thole <jthole@gmail.com>
+
 Reusable, non-normative starting points:
 
 - [`CollaborationProfile.template.md`](CollaborationProfile.template.md)

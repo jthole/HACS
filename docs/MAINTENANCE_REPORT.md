@@ -1,68 +1,94 @@
-# HACS v0.3.0 Maintenance Report
+# HACS v0.4.0 Maintenance Report
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Release Manager  
 **Status:** Informative  
-**Release:** 0.3.0<br>
+**Release candidate:** 0.4.0<br>
 **Report date:** 2026-07-24
 
 ## Release summary
 
-HACS 0.3.0 adds a general, model- and vendor-agnostic requirement for information whose correctness may depend on software or product version, edition, configuration, or current date.
-
-The collaborator determines whether those factors are material before verification is required. When they are material, the collaborator identifies the applicable context, verifies current information, prefers authoritative evidence, distinguishes documented behaviour and public evidence from inference, avoids invented configuration details, and reports incomplete evidence.
+HACS 0.4.0 adds a self-contained collaboration contract for direct adoption, an informative overview of the ten HACS principles, explicit evidence precedence across product versions and contexts, and CC BY-SA 4.0 licensing. Author metadata now identifies Johan Thole across all repository documents while role-based document ownership remains separate.
 
 ## Baseline and version decision
 
-The canonical baseline is commit `6f833b4`, HACS v0.2.0. The requested requirement is a backward-compatible normative addition rather than a correction that leaves requirements unchanged. ADR-0007 and [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#versioning-policy) therefore require the minor version 0.3.0.
+The canonical release baseline is commit `61530f1`, tagged `v0.3.0`. The standalone contract and principles overview are new document capabilities, and the evidence-precedence rules are a substantial backward-compatible clarification. ADR-0007 and [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#versioning-policy) therefore require the minor version 0.4.0.
+
+The maintainer intends to reassess release versioning and draft-release policy for future versions. That work is recorded as BL-012 and does not change the current release process.
 
 ## Requirement ownership
 
-[`CollaborationProfile.md`](CollaborationProfile.md#13-establish-applicability-and-evidence) is the single normative owner of the observable behavioural requirement.
+[`CollaborationProfile.md`](CollaborationProfile.md#13-establish-applicability-and-evidence) remains the single normative owner of the default evidence-handling behaviour. It now requires:
 
-- ADR-0009 records the lasting decision and its consequences.
-- `Architecture.md` references the owning behavioural rule as an architectural principle.
-- the collaboration-profile template points adopters to the default rule without reproducing it.
-- informative release documents describe the user-visible change.
+- precedence for the newest authoritative evidence applicable to the relevant context;
+- explicit handling of information from different versions or contexts;
+- a warning when evidence is available only for older versions.
+
+`CollaborationContract.md` is a self-contained contract that becomes normative when adopted in a collaboration context. Within the HACS repository, it is maintained as a standalone delivery artifact derived from the owning normative requirements.
+
+`PRINCIPLES.md` is informative and does not own normative requirements.
+
+ADR-0010 records this artifact classification and makes contract alignment a release check.
+
+## Licensing and attribution
+
+The repository owner selected the Creative Commons Attribution-ShareAlike 4.0 International license for the draft specification. `LICENSE.md` provides the license notice, canonical license links, and suggested attribution.
+
+All repository Markdown documents identify:
+
+> Johan Thole <jthole@gmail.com>
+
+as author. Role-based fields such as document owner, profile owner, reviewer, and release manager remain unchanged.
 
 ## Modified documents
 
-| Document | Change |
+| Document or group | Change |
 |---|---|
-| `README.md` | Updated release metadata, summary, repository map, and core principles. |
-| `LICENSE.md` | Updated release metadata; licensing terms are unchanged. |
-| `docs/CollaborationProfile.md` | Added the applicability-and-evidence requirement and related anti-pattern. |
-| `docs/DecisionLog.md` | Added accepted ADR-0009. |
-| `docs/Architecture.md` | Added a reference to the behavioural requirement. |
-| `docs/PROJECT.md` | Updated release-wide metadata. |
-| `docs/RELEASE_PROCESS.md` | Updated release-wide metadata; process requirements are unchanged. |
-| `docs/Backlog.md` | Updated release-wide metadata. |
-| `docs/CHANGELOG.md` | Added the 0.3.0 release entry. |
-| `docs/REVIEW_LOG.md` | Recorded version-classification and ownership review evidence. |
-| `docs/MAINTENANCE_REPORT.md` | Replaced the 0.2.0 report with this release-specific report. |
-| `templates/CollaborationProfile.template.md` | Added a reference for project-specific applicability context and sources. |
-| `assets/README.md` | Updated release metadata. |
-| root bootstrap documents | Removed obsolete 0.1.0 copies superseded by the authoritative files under `docs/`. |
+| `CollaborationContract.md` | Added a standalone, directly adoptable collaboration contract and version-evidence safeguards. |
+| `docs/DecisionLog.md` | Added ADR-0010 for the contract's authority and alignment model. |
+| `docs/CollaborationProfile.md` | Added the owning normative evidence-precedence and older-source warning requirements. |
+| `docs/PRINCIPLES.md` | Added an informative overview of the ten HACS principles. |
+| `LICENSE.md` | Adopted CC BY-SA 4.0 and added attribution guidance. |
+| `README.md` | Updated release metadata, summary, repository map, and licensing statement. |
+| `docs/Backlog.md` | Closed the license-selection item and added release-policy review item BL-012. |
+| `docs/CHANGELOG.md` | Added the 0.4.0 entry. |
+| `docs/REVIEW_LOG.md` | Recorded 0.4.0 validation evidence and remaining release action. |
+| current-version documents | Advanced release-wide metadata to 0.4.0. |
+| all Markdown documents | Added consistent author metadata. |
 
 ## Assumptions
 
-1. Commit `6f833b4` is the canonical v0.2.0 baseline.
-2. HACS remains a private working specification.
-3. The repository owner controls acceptance, commit, tagging, and any distribution.
-4. The current English-language documents remain authoritative.
-5. A canonical public repository URL and public license remain unresolved.
+1. Commit `61530f1` and tag `v0.3.0` identify the canonical prior release.
+2. HACS remains a draft specification.
+3. Johan Thole is the author and repository owner for the material being licensed.
+4. The repository owner controls acceptance, commit, tagging, and distribution.
+5. The current English-language documents remain authoritative.
+6. Third-party material, if later added, must be identified with its applicable license.
 
 ## Validation performed
 
-The final validation results for this working tree are recorded in [`REVIEW_LOG.md`](REVIEW_LOG.md). Checks cover required files, local Markdown links, release metadata, decision reflection, requirement ownership, whitespace errors, and package contents.
+Validation covered:
+
+- author metadata across repository Markdown documents;
+- current-version and historical-version consistency;
+- normative ownership of the evidence-precedence requirements;
+- local Markdown files and heading anchors;
+- licensing-statement consistency;
+- repository structure;
+- `git diff --check`.
+
+The results are recorded in [`REVIEW_LOG.md`](REVIEW_LOG.md).
 
 ## Known limitations
 
-- no canonical repository URL is assigned, so changelog comparison links remain explicit placeholders;
-- no public license or contribution policy is selected;
+- no canonical repository URL is assigned, so changelog comparison URLs remain explicit placeholders;
+- no contribution policy is selected;
 - repository validation is local rather than continuous integration;
 - no machine-readable profile schema exists;
-- conformance testing remains illustrative rather than comprehensive.
+- conformance testing remains illustrative rather than comprehensive;
+- contract synchronization is a manual release check pending the repeatable workflow in BL-013;
+- the release versioning and draft-release policy is scheduled for reassessment.
 
 ## Persistence status
 
-This working tree is not a released canonical Git state. HACS v0.3.0 becomes `Released` only after maintainer approval, a release commit, and identification in Git according to [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#8-persist-and-identify). Any distribution archive must correspond to that approved Git state.
+HACS v0.4.0 is a release candidate in the working tree. It has not been committed, tagged, packaged, pushed, or released. It becomes `Released` only after maintainer approval, a release commit, and identification in Git according to [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#8-persist-and-identify).

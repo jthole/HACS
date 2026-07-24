@@ -1,27 +1,30 @@
 # Human-AI Collaboration Specification (HACS)
 
-**Release:** 0.3.0<br>
-**Status:** Working specification  
+**Author:** Johan Thole <jthole@gmail.com><br>
+**Release:** 0.4.0 release candidate<br>
+**Status:** Draft specification<br>
 **Release date:** 2026-07-24<br>
 **Primary owner:** HACS Maintainer
 
 HACS is a model-agnostic specification for making sustained human-AI collaboration explicit, reviewable, and maintainable. It defines how collaboration expectations are expressed, how project-specific rules are applied, how uncertainty and task state are communicated, and how the specification itself is governed.
 
-Version 0.3.0 adds a general applicability-and-evidence requirement for information whose correctness may depend on version, edition, configuration, or date. Git remains the canonical persistence layer; external project or assistant source stores are context caches, not authoritative repositories.
+Version 0.4.0 adds a standalone collaboration contract, an informative principles overview, explicit evidence precedence across product versions, and CC BY-SA 4.0 licensing. Git remains the canonical persistence layer; external project or assistant source stores are context caches, not authoritative repositories.
 
 ## Repository map
 
 | Path | Purpose | Normative status |
 |---|---|---|
+| [`CollaborationContract.md`](CollaborationContract.md) | Self-contained contract for direct adoption in a collaboration context | Normative when adopted |
 | [`docs/PROJECT.md`](docs/PROJECT.md) | Product definition, scope, governance, and document ownership | Normative |
 | [`docs/Architecture.md`](docs/Architecture.md) | HACS conceptual architecture and conformance model | Normative |
 | [`docs/CollaborationProfile.md`](docs/CollaborationProfile.md) | Default human-AI collaboration requirements | Normative |
+| [`docs/PRINCIPLES.md`](docs/PRINCIPLES.md) | Concise overview of the ten HACS principles | Informative |
 | [`docs/DecisionLog.md`](docs/DecisionLog.md) | Accepted architectural and governance decisions | Normative for accepted decisions |
 | [`docs/RELEASE_PROCESS.md`](docs/RELEASE_PROCESS.md) | Versioning, review, release, and maintenance process | Normative |
 | [`docs/Backlog.md`](docs/Backlog.md) | Candidate future work | Informative |
 | [`docs/REVIEW_LOG.md`](docs/REVIEW_LOG.md) | Review evidence and outcomes | Informative evidence |
 | [`docs/CHANGELOG.md`](docs/CHANGELOG.md) | User-visible release history | Informative |
-| [`docs/MAINTENANCE_REPORT.md`](docs/MAINTENANCE_REPORT.md) | v0.3.0 maintenance and release report | Informative |
+| [`docs/MAINTENANCE_REPORT.md`](docs/MAINTENANCE_REPORT.md) | v0.4.0 maintenance and release report | Informative |
 | [`templates/`](templates/) | Reusable profile and decision templates | Supporting assets |
 | [`examples/`](examples/) | Non-normative usage examples | Supporting assets |
 | [`assets/`](assets/) | Future diagrams and static assets | Supporting assets |
@@ -48,4 +51,4 @@ Normative keywords **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY
 
 ## License
 
-No open-source license is assigned in this release. See [`LICENSE.md`](LICENSE.md).
+HACS is a draft specification licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE.md).

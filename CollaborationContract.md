@@ -1,7 +1,9 @@
 # Human–AI Collaboration Contract
 
-**Status:** Executable collaboration contract  
-**Version:** 0.3.0  
+**Author:** Johan Thole <jthole@gmail.com><br>
+**Document owner:** Profile Owner<br>
+**Status:** Draft standalone contract; normative when adopted<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24  
 **Applicability:** Model- and vendor-agnostic
 

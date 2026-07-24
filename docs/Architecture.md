@@ -1,8 +1,9 @@
 # HACS Architecture
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Systems Architect  
 **Status:** Normative  
-**Version:** 0.3.0<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24
 
 ## Purpose
@@ -38,6 +39,7 @@ HACS is designed around the following constraints:
 | **Governance** | What is HACS, who owns it, and what is authoritative? | [`PROJECT.md`](PROJECT.md) |
 | **Architecture** | How are collaboration rules structured and evaluated? | This document |
 | **Behaviour** | What observable conduct is expected by default? | [`CollaborationProfile.md`](CollaborationProfile.md) |
+| **Adoption** | What self-contained contract can be applied directly? | [`../CollaborationContract.md`](../CollaborationContract.md) |
 | **Process** | How are changes reviewed, released, and maintained? | [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md) |
 | **Evidence** | What decisions and reviews support the current state? | [`DecisionLog.md`](DecisionLog.md), [`REVIEW_LOG.md`](REVIEW_LOG.md) |
 
@@ -50,6 +52,10 @@ The set of applicable instructions, artifacts, capabilities, constraints, and cu
 ### Collaboration profile
 
 A versioned set of observable behavioural expectations. The repository profile provides defaults; a project profile can specialize them.
+
+### Standalone collaboration contract
+
+A self-contained delivery artifact that consolidates applicable collaboration rules for direct adoption. It becomes normative within a collaboration context when adopted there. Within the HACS repository, its behavioural content is derived from the owning normative documents and MUST be checked for alignment before release.
 
 ### Project rule
 

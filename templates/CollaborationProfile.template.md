@@ -1,5 +1,6 @@
 # Collaboration Profile: <Name or Project>
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Profile owner:** <owner>  
 **Status:** Draft | Active | Retired  
 **Version:** <version>  

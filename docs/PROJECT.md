@@ -1,8 +1,9 @@
 # HACS Project Definition
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** HACS Maintainer  
 **Status:** Normative  
-**Version:** 0.3.0<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24
 
 ## Purpose
@@ -86,6 +87,8 @@ Content maintenance and content persistence are separate responsibilities:
 | `PROJECT.md` | Product scope and governance | HACS Maintainer | Normative |
 | `Architecture.md` | Concepts, layers, precedence, conformance | Systems Architect | Normative |
 | `CollaborationProfile.md` | Default collaboration behaviour | Profile owner | Normative |
+| `../CollaborationContract.md` | Self-contained contract for direct adoption | Profile owner | Normative when adopted; derived artifact in this repository |
+| `PRINCIPLES.md` | Concise overview of HACS principles | HACS Maintainer | Informative |
 | `DecisionLog.md` | Accepted decisions and consequences | HACS Maintainer | Normative for accepted decisions |
 | `RELEASE_PROCESS.md` | Versioning and release controls | Release Manager | Normative |
 | `Backlog.md` | Candidate work | HACS Maintainer | Informative |

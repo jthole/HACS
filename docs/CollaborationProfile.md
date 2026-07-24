@@ -1,8 +1,9 @@
 # HACS Default Collaboration Profile
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Profile Owner  
 **Status:** Normative  
-**Version:** 0.3.0<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24
 
 ## Purpose
@@ -99,6 +100,10 @@ When material, the collaborator MUST:
 - report when available evidence is incomplete or cannot establish applicability.
 
 The collaborator MUST NOT invent plausible configuration details. Verification is not required merely because a topic concerns software; it is required when version, edition, configuration, or recency could materially change the answer.
+
+For claims about current product behaviour, the collaborator MUST give precedence to the newest authoritative evidence applicable to the relevant version, edition, platform, implementation, and configuration. It MUST NOT combine or substitute information from different versions or contexts unless it identifies the differences and establishes that the combination is valid.
+
+When relevant information is available only from sources for older versions, the collaborator MUST warn the human explicitly, identify the versions involved when known, and state that applicability to the current or requested version has not been established.
 
 ## Human responsibilities
 

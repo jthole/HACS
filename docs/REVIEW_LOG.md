@@ -1,8 +1,9 @@
 # HACS Review Log
 
+**Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Reviewer  
 **Status:** Informative evidence  
-**Version:** 0.3.0<br>
+**Version:** 0.4.0<br>
 **Last updated:** 2026-07-24
 
 ## Purpose
@@ -30,14 +31,23 @@ This log records formal review activities and outcomes. It is evidence for relea
 | 2026-07-24 | 0.3.0 | Repository structure review | Root, `docs`, examples, templates, and assets | Passed | Obsolete root bootstrap duplicates were removed; authoritative documents remain under `docs/`. |
 | 2026-07-24 | 0.3.0 | Diff hygiene | Complete working-tree diff | Passed | `git diff --check` reports no whitespace errors. |
 | 2026-07-24 | 0.3.0 | Final release readiness | Completion criteria in `PROJECT.md` | Conditionally passed | Content and local validation are complete; canonical release commit, annotated tag, and tag-derived distribution remain maintainer actions. |
+| 2026-07-24 | Draft | Licensing coherence | License, author metadata, backlog, changelog, and release evidence | Passed | CC BY-SA 4.0 is stated consistently; authorship is distinct from role-based document ownership. |
+| 2026-07-24 | 0.4.0 | Change classification | Contract, principles, evidence clarification, licensing, and attribution | Passed | New document capabilities and a substantial backward-compatible clarification require a minor release under ADR-0007. |
+| 2026-07-24 | 0.4.0 | Requirement ownership | Version-evidence precedence and older-source warning | Passed | `CollaborationProfile.md` remains the single normative owner; the standalone contract is a directly adoptable delivery artifact. |
+| 2026-07-24 | 0.4.0 | Document classification | `CollaborationContract.md` and `docs/PRINCIPLES.md` | Passed | The contract is normative when adopted; the principles overview is informative. |
+| 2026-07-24 | 0.4.0 | Decision consistency | ADR-0010 and affected documents | Passed | The contract is classified consistently as an adoptable derived artifact, and alignment is included as a release check. |
+| 2026-07-24 | 0.4.0 | Licensing and attribution | All repository documents | Passed | CC BY-SA 4.0 is stated consistently, and all Markdown documents identify Johan Thole as author. |
+| 2026-07-24 | 0.4.0 | Cross-reference validation | All Markdown files and local heading anchors | Passed | All local Markdown targets and referenced anchors resolve. |
+| 2026-07-24 | 0.4.0 | Release metadata review | Current-version documents and historical references | Passed | Current metadata is 0.4.0 dated 2026-07-24; older version references are historical or identify the prior baseline. |
+| 2026-07-24 | 0.4.0 | Diff hygiene | Complete working-tree diff | Passed | `git diff --check` reports no whitespace errors. |
+| 2026-07-24 | 0.4.0 | Release readiness | Completion criteria in `PROJECT.md` | Conditionally passed | Content validation is complete; commit, packaging, annotated tag, and any push remain maintainer actions. |
 
 ## Open review notes
 
 1. No canonical repository URL is available; changelog comparison URLs are explicit placeholders.
-2. No public license has been selected.
-3. The release has no automated Markdown linter; validation was performed during package generation.
-4. Conformance examples are illustrative and do not yet constitute a complete test suite.
+2. The release has no automated Markdown linter; validation was performed during package generation.
+3. Conformance examples are illustrative and do not yet constitute a complete test suite.
 
 ## Sign-off model
 
-For a private working release, the repository owner MAY accept the release after reviewing the ZIP and committing it to Git. A future public contribution model will require additional reviewer and approver rules.
+The repository owner MAY accept a working release after reviewing the ZIP and committing it to Git. A future public contribution model will require additional reviewer and approver rules.

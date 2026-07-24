@@ -3,7 +3,7 @@
 **Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Release Manager  
 **Status:** Informative  
-**Release candidate:** 0.4.0<br>
+**Draft version:** 0.4.0<br>
 **Report date:** 2026-07-24
 
 ## Release summary
@@ -91,4 +91,4 @@ The results are recorded in [`REVIEW_LOG.md`](REVIEW_LOG.md).
 
 ## Persistence status
 
-HACS v0.4.0 is a release candidate in the working tree. It has not been committed, tagged, packaged, pushed, or released. It becomes `Released` only after maintainer approval, a release commit, and identification in Git according to [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#8-persist-and-identify).
+HACS v0.4.0 is a published draft specification identified by the annotated `v0.4.0` tag in canonical Git. It is `Released` in the persistence sense defined by [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#release-states); its draft status means the specification remains subject to further development and does not imply final or stable status. No distribution archive has been produced.

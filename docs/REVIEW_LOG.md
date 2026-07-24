@@ -40,7 +40,8 @@ This log records formal review activities and outcomes. It is evidence for relea
 | 2026-07-24 | 0.4.0 | Cross-reference validation | All Markdown files and local heading anchors | Passed | All local Markdown targets and referenced anchors resolve. |
 | 2026-07-24 | 0.4.0 | Release metadata review | Current-version documents and historical references | Passed | Current metadata is 0.4.0 dated 2026-07-24; older version references are historical or identify the prior baseline. |
 | 2026-07-24 | 0.4.0 | Diff hygiene | Complete working-tree diff | Passed | `git diff --check` reports no whitespace errors. |
-| 2026-07-24 | 0.4.0 | Release readiness | Completion criteria in `PROJECT.md` | Conditionally passed | Content validation is complete; commit, packaging, annotated tag, and any push remain maintainer actions. |
+| 2026-07-24 | 0.4.0 | Release readiness | Completion criteria in `PROJECT.md` | Conditionally passed | At review time, content validation was complete; commit, packaging, annotated tag, and any push remained maintainer actions. |
+| 2026-07-24 | 0.4.0 | Draft publication state | Commit, annotated tag, push, and document status | Passed with note | Commit `623e6f2` and tag `v0.4.0` were pushed; HACS remains explicitly Draft. No distribution archive was produced. |
 
 ## Open review notes
 

@@ -3,7 +3,7 @@
 **Author:** Johan Thole <jthole@gmail.com><br>
 **Document owner:** Release Manager  
 **Status:** Informative  
-**Current release candidate:** 0.4.0
+**Current draft version:** 0.4.0
 
 All notable changes to HACS are recorded here. HACS follows the versioning rules in [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#versioning-policy).
 

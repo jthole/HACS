@@ -1,7 +1,7 @@
 # Human-AI Collaboration Specification (HACS)
 
 **Author:** Johan Thole <jthole@gmail.com><br>
-**Release:** 0.4.0 release candidate<br>
+**Version:** 0.4.0<br>
 **Status:** Draft specification<br>
 **Release date:** 2026-07-24<br>
 **Primary owner:** HACS Maintainer

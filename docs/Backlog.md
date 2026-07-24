@@ -2,8 +2,8 @@
 
 **Document owner:** HACS Maintainer  
 **Status:** Informative  
-**Version:** 0.2.0  
-**Last updated:** 2026-07-23
+**Version:** 0.3.0<br>
+**Last updated:** 2026-07-24
 
 ## Purpose
 

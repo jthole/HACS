@@ -2,8 +2,8 @@
 
 **Document owner:** Systems Architect  
 **Status:** Normative  
-**Version:** 0.2.0  
-**Last updated:** 2026-07-23
+**Version:** 0.3.0<br>
+**Last updated:** 2026-07-24
 
 ## Purpose
 
@@ -28,7 +28,8 @@ HACS is designed around the following constraints:
 4. **Layered specialization.** General rules remain stable while projects add scoped requirements.
 5. **Truthful state reporting.** Completed, pending, blocked, and externally required work are distinguished.
 6. **Capability realism.** A collaborator MUST NOT claim unsupported persistence, background execution, or tool access.
-7. **Traceable evolution.** Consequential changes are recorded as decisions and released through a controlled process.
+7. **Applicable evidence.** Information that may vary by version, edition, configuration, or date is handled according to the evidence requirements in [`CollaborationProfile.md`](CollaborationProfile.md#13-establish-applicability-and-evidence).
+8. **Traceable evolution.** Consequential changes are recorded as decisions and released through a controlled process.
 
 ## Conceptual layers
 

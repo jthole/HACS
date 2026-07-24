@@ -1,101 +1,68 @@
-# HACS v0.2.0 Maintenance Report
+# HACS v0.3.0 Maintenance Report
 
 **Document owner:** Release Manager  
 **Status:** Informative  
-**Release:** 0.2.0  
-**Report date:** 2026-07-23
+**Release:** 0.3.0<br>
+**Report date:** 2026-07-24
 
 ## Release summary
 
-HACS 0.2.0 converts the 0.1.0 bootstrap into a coherent, reviewable specification. The release preserves the three original architectural decisions and supplies the missing governance, architecture, behaviour, release, review, template, and example structure needed for practical maintenance.
+HACS 0.3.0 adds a general, model- and vendor-agnostic requirement for information whose correctness may depend on software or product version, edition, configuration, or current date.
 
-The release is intentionally model- and vendor-agnostic. Observable behaviour, truthful task-state reporting, capability realism, explicit assumptions, rule layering, and Git-first persistence form the core.
+The collaborator determines whether those factors are material before verification is required. When they are material, the collaborator identifies the applicable context, verifies current information, prefers authoritative evidence, distinguishes documented behaviour and public evidence from inference, avoids invented configuration details, and reports incomplete evidence.
 
-## Baseline assessment
+## Baseline and version decision
 
-The supplied 0.1.0 archive contained ten small root-level files and three accepted decisions:
+The canonical baseline is commit `6f833b4`, HACS v0.2.0. The requested requirement is a backward-compatible normative addition rather than a correction that leaves requirements unchanged. ADR-0007 and [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#versioning-policy) therefore require the minor version 0.3.0.
 
-1. Git is the canonical persistence layer.
-2. Document maintenance and persistence are separate responsibilities.
-3. Observable behaviour is normative.
+## Requirement ownership
 
-The bootstrap did not yet define document ownership, precedence, conformance, versioning, quality gates, or a release process.
+[`CollaborationProfile.md`](CollaborationProfile.md#13-establish-applicability-and-evidence) is the single normative owner of the observable behavioural requirement.
+
+- ADR-0009 records the lasting decision and its consequences.
+- `Architecture.md` references the owning behavioural rule as an architectural principle.
+- the collaboration-profile template points adopters to the default rule without reproducing it.
+- informative release documents describe the user-visible change.
 
 ## Modified documents
 
 | Document | Change |
 |---|---|
-| `README.md` | Rewritten as repository entry point with principles, map, and usage guidance. |
-| `LICENSE.md` | Clarified private-use, all-rights-reserved status. |
-| `.gitignore` | Expanded for operating-system, editor, build, archive, and temporary files. |
-| `docs/PROJECT.md` | Expanded into the normative product and governance definition. |
-| `docs/Architecture.md` | Added layers, concepts, lifecycle, task state, rule precedence, persistence flow, and conformance. |
-| `docs/CollaborationProfile.md` | Expanded bootstrap bullets into a complete normative default profile. |
-| `docs/DecisionLog.md` | Converted to ADR format; preserved ADR-0001–0003 and added ADR-0004–0008. |
-| `docs/Backlog.md` | Structured and prioritized future work; reconciled bootstrap items. |
-| `docs/CHANGELOG.md` | Added complete 0.2.0 history and compatibility statement. |
-| `docs/REVIEW_LOG.md` | Added release-wide validation evidence and open notes. |
-| `docs/RELEASE_PROCESS.md` | New normative release and maintenance process. |
-| `docs/MAINTENANCE_REPORT.md` | New release maintenance report. |
-| `templates/*` | Added reusable profile, ADR, and release-checklist templates. |
-| `examples/*` | Added non-normative profile and conformance-review examples. |
-| `assets/README.md` | Defined asset purpose and current absence of binary assets. |
-
-## Architectural decisions
-
-### Preserved
-
-- ADR-0001: Git is canonical.
-- ADR-0002: maintenance and persistence are separate.
-- ADR-0003: observable behaviour is normative.
-
-### Added
-
-- ADR-0004: layered document authority;
-- ADR-0005: single ownership of normative requirements;
-- ADR-0006: explicit scoped project-profile overrides;
-- ADR-0007: semantic versioning;
-- ADR-0008: capability boundaries outrank requested behaviour.
+| `README.md` | Updated release metadata, summary, repository map, and core principles. |
+| `LICENSE.md` | Updated release metadata; licensing terms are unchanged. |
+| `docs/CollaborationProfile.md` | Added the applicability-and-evidence requirement and related anti-pattern. |
+| `docs/DecisionLog.md` | Added accepted ADR-0009. |
+| `docs/Architecture.md` | Added a reference to the behavioural requirement. |
+| `docs/PROJECT.md` | Updated release-wide metadata. |
+| `docs/RELEASE_PROCESS.md` | Updated release-wide metadata; process requirements are unchanged. |
+| `docs/Backlog.md` | Updated release-wide metadata. |
+| `docs/CHANGELOG.md` | Added the 0.3.0 release entry. |
+| `docs/REVIEW_LOG.md` | Recorded version-classification and ownership review evidence. |
+| `docs/MAINTENANCE_REPORT.md` | Replaced the 0.2.0 report with this release-specific report. |
+| `templates/CollaborationProfile.template.md` | Added a reference for project-specific applicability context and sources. |
+| `assets/README.md` | Updated release metadata. |
+| root bootstrap documents | Removed obsolete 0.1.0 copies superseded by the authoritative files under `docs/`. |
 
 ## Assumptions
 
-1. The supplied ZIP is the complete canonical 0.1.0 baseline available for this release task.
-2. HACS remains a private working specification in 0.2.0.
-3. The repository owner will perform the final Git commit and tag because no direct canonical repository integration is available in this execution context.
-4. The English-language document set is authoritative; no translation is included.
-5. GitHub-compatible Markdown is sufficient; no static-site generator is required.
+1. Commit `6f833b4` is the canonical v0.2.0 baseline.
+2. HACS remains a private working specification.
+3. The repository owner controls acceptance, commit, tagging, and any distribution.
+4. The current English-language documents remain authoritative.
+5. A canonical public repository URL and public license remain unresolved.
 
 ## Validation performed
 
-- required repository paths and files checked;
-- internal Markdown file targets checked;
-- release-version metadata checked;
-- accepted bootstrap decisions compared with all normative documents;
-- cross-document terminology and ownership reviewed;
-- ZIP archive generated from a clean release directory;
-- archive manifest and SHA-256 checksum generated outside the repository for delivery verification.
+The final validation results for this working tree are recorded in [`REVIEW_LOG.md`](REVIEW_LOG.md). Checks cover required files, local Markdown links, release metadata, decision reflection, requirement ownership, whitespace errors, and package contents.
 
 ## Known limitations
 
-- no canonical repository URL is assigned;
+- no canonical repository URL is assigned, so changelog comparison links remain explicit placeholders;
 - no public license or contribution policy is selected;
-- no automated CI or Markdown linter is included;
+- repository validation is local rather than continuous integration;
 - no machine-readable profile schema exists;
-- conformance testing is illustrative rather than comprehensive;
-- no direct Git commit or tag was possible from the supplied archive alone;
-- external platform safety and capability constraints are referenced conceptually rather than standardized.
+- conformance testing remains illustrative rather than comprehensive.
 
-## Recommendations for 0.3.0
+## Persistence status
 
-1. Add a normative glossary and stabilize definitions.
-2. Create a complete observable conformance test catalogue.
-3. Define and prototype a machine-readable profile schema.
-4. Add automated repository linting and release packaging.
-5. Add several real project-profile case studies, including explicit overrides.
-6. Decide licensing and contribution governance before public distribution.
-7. Assign a canonical repository URL and replace changelog placeholders.
-8. Evaluate a capability declaration that can state persistence and automation support without coupling HACS to a vendor.
-
-## Persistence handoff
-
-The delivered ZIP is a packaged release candidate. To make it canonical, extract it into the repository, review the diff, commit it, and create the `v0.2.0` annotated tag according to [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#8-persist-and-identify).
+This working tree is not a released canonical Git state. HACS v0.3.0 becomes `Released` only after maintainer approval, a release commit, and identification in Git according to [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#8-persist-and-identify). Any distribution archive must correspond to that approved Git state.

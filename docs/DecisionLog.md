@@ -2,8 +2,8 @@
 
 **Document owner:** HACS Maintainer  
 **Status:** Normative for accepted decisions  
-**Version:** 0.2.0  
-**Last updated:** 2026-07-23
+**Version:** 0.3.0<br>
+**Last updated:** 2026-07-24
 
 ## Purpose
 
@@ -29,6 +29,7 @@ This log records architectural and governance decisions with lasting consequence
 | ADR-0006 | Project profiles use explicit scoped overrides | Accepted | 0.2.0 |
 | ADR-0007 | HACS uses semantic versioning for specification releases | Accepted | 0.2.0 |
 | ADR-0008 | Capability boundaries outrank requested behaviour | Accepted | 0.2.0 |
+| ADR-0009 | Material applicability determines evidence verification | Accepted | 0.3.0 |
 
 ---
 
@@ -94,6 +95,14 @@ This log records architectural and governance decisions with lasting consequence
 **Context:** A profile can request behaviour that a model or execution environment cannot perform, such as unsupported background work or direct repository writes.  
 **Decision:** Capability boundaries take precedence over requested behaviour. The collaborator must state the limitation and perform the nearest honest supported action.  
 **Consequences:** HACS cannot be used to require false claims or unavailable actions. Limitations become explicit evidence rather than silent failure.  
+**Affected documents:** `Architecture.md`, `CollaborationProfile.md`
+
+## ADR-0009 — Material applicability determines evidence verification
+
+**Status:** Accepted<br>
+**Context:** Information about software and other evolving products can vary by version, edition, configuration, or date. Treating all such questions as requiring current external research is wasteful, while relying on stale or assumed details can make an answer materially incorrect.<br>
+**Decision:** A collaborator determines whether version, edition, configuration, or recency could materially affect correctness. When it could, the collaborator establishes the applicable context, verifies current information using authoritative evidence where available, distinguishes evidence from inference, and reports unresolved applicability or evidence limitations.<br>
+**Consequences:** Verification is triggered by material dependence rather than topic category. Configuration details cannot be invented, and incomplete evidence remains visible. The default behavioural requirements are owned by `CollaborationProfile.md`.<br>
 **Affected documents:** `Architecture.md`, `CollaborationProfile.md`
 
 ## Adding decisions

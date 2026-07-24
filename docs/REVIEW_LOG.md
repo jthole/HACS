@@ -2,8 +2,8 @@
 
 **Document owner:** Reviewer  
 **Status:** Informative evidence  
-**Version:** 0.2.0  
-**Last updated:** 2026-07-23
+**Version:** 0.3.0<br>
+**Last updated:** 2026-07-24
 
 ## Purpose
 
@@ -21,6 +21,15 @@ This log records formal review activities and outcomes. It is evidence for relea
 | 2026-07-23 | 0.2.0 | Repository structure review | Root, `docs`, `examples`, `templates`, `assets` | Passed | Required files and directories present. |
 | 2026-07-23 | 0.2.0 | Release metadata review | Versions, dates, changelog, report | Passed | Release-wide version set to 0.2.0; historical 0.1.0 references retained. |
 | 2026-07-23 | 0.2.0 | Final release readiness | Completion criteria in `PROJECT.md` | Conditionally passed | Artifact is package-ready; canonical Git commit/tag remains an external repository-owner action. |
+| 2026-07-24 | 0.3.0 | Change classification | Applicability-and-evidence requirement and version policy | Passed | Classified as a backward-compatible normative addition requiring a minor release under ADR-0007. |
+| 2026-07-24 | 0.3.0 | Requirement ownership | Normative and supporting documents | Passed | `CollaborationProfile.md` owns the behavioural requirement; ADR-0009 records the principle and Architecture references the owner. |
+| 2026-07-24 | 0.3.0 | Requirement coverage | Intended applicability-and-evidence behaviours | Passed | Covered material-dependence assessment, applicable context, current verification, authoritative evidence, configuration integrity, evidence classification, and incomplete evidence. |
+| 2026-07-24 | 0.3.0 | Decision consistency | ADR-0009 and affected normative documents | Passed | The accepted decision is reflected without creating a second behavioural owner. |
+| 2026-07-24 | 0.3.0 | Cross-reference validation | All Markdown files and local heading anchors | Passed | All local Markdown targets and referenced anchors resolve. |
+| 2026-07-24 | 0.3.0 | Release metadata review | Current-version documents and historical references | Passed | Current metadata is 0.3.0 dated 2026-07-24; older version references are historical. |
+| 2026-07-24 | 0.3.0 | Repository structure review | Root, `docs`, examples, templates, and assets | Passed | Obsolete root bootstrap duplicates were removed; authoritative documents remain under `docs/`. |
+| 2026-07-24 | 0.3.0 | Diff hygiene | Complete working-tree diff | Passed | `git diff --check` reports no whitespace errors. |
+| 2026-07-24 | 0.3.0 | Final release readiness | Completion criteria in `PROJECT.md` | Conditionally passed | Content and local validation are complete; canonical release commit, annotated tag, and tag-derived distribution remain maintainer actions. |
 
 ## Open review notes
 

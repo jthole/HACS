@@ -43,6 +43,8 @@ Specify outputs, validation, and completion criteria.
 
 Identify authoritative repositories, documents, data, and handoff responsibilities.
 
+When the project uses information that may vary by version, edition, configuration, or date, reference [default rule 13](../docs/CollaborationProfile.md#13-establish-applicability-and-evidence) and identify any project-specific authoritative sources or applicability context. Do not reproduce the default requirement.
+
 ## Known capability boundaries
 
 Record relevant tool, access, automation, or persistence limitations.

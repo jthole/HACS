@@ -2,9 +2,27 @@
 
 **Document owner:** Release Manager  
 **Status:** Informative  
-**Current release:** 0.2.0
+**Current release:** 0.3.0
 
 All notable changes to HACS are recorded here. HACS follows the versioning rules in [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md#versioning-policy).
+
+## [0.3.0] — 2026-07-24
+
+### Added
+
+- a general applicability-and-evidence requirement for information that may vary by version, edition, configuration, or date;
+- ADR-0009, establishing material dependence as the trigger for current verification;
+- explicit requirements to prefer authoritative evidence, distinguish evidence from inference, avoid invented configuration details, and disclose incomplete applicability evidence.
+
+### Changed
+
+- updated the architectural principles and collaboration-profile template to reference the new normative behaviour;
+- removed obsolete root-level bootstrap documents whose authoritative successors are under `docs/`;
+- advanced release-wide metadata to 0.3.0.
+
+### Compatibility
+
+This is a backward-compatible normative addition. The minor version increment follows ADR-0007 and the versioning policy in `RELEASE_PROCESS.md`.
 
 ## [0.2.0] — 2026-07-23
 
@@ -53,5 +71,6 @@ This is a backward-compatible expansion of the 0.1.0 bootstrap principles. Exist
 
 [0.2.0]: https://example.invalid/hacs/releases/tag/v0.2.0
 [0.1.0]: https://example.invalid/hacs/releases/tag/v0.1.0
+[0.3.0]: https://example.invalid/hacs/releases/tag/v0.3.0
 
 > The comparison links are placeholders until a canonical repository URL is assigned.
